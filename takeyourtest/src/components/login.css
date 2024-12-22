@@ -1,0 +1,91 @@
+/* General styles for the login container */
+.login {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Full screen height */
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    font-family: 'Arial', sans-serif;
+}
+
+.loginHead{
+    font-size: 30px;
+    font-weight: 600;
+    color: #5313ba;
+    margin-bottom: 20px;
+    background-color: #d63031;
+    width: 100%;
+    border: 2px solid red;
+    padding: 40px;
+}
+
+/* Styling for the form */
+form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Input fields styling */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input hover and focus effects */
+input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
+/* Error messages */
+div.error {
+    color: #d63031;
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Submit button styling */
+button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #5e3ace;
+}
+
+button:disabled {
+    background: #dfe6e9;
+    color: #636e72;
+    cursor: not-allowed;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+}
