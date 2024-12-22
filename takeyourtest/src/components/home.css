@@ -1,0 +1,21 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(207, 219, 219);
+    overflow: hidden;
+}
+.top, .footer{
+    height: 50px;
+    width: 100%;
+    border: 2px solid red;
+    background-color: blanchedalmond;
+}
+
+.middle{
+   flex-grow: 1;
+    width: 100%;
+    border: 2px solid rgb(78, 217, 18);
+}   
